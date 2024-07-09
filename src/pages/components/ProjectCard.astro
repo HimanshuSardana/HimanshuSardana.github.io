@@ -15,7 +15,9 @@ import Tag from "./Tag.astro";
     <div class="technologies leading-2 flex flex-wrap gap-3 mt-3">
       {technologies?.map((tech) => <Tag text={tech} />)}
     </div>
-    <div class="buttons mt-10 flex gap-3 relative">
+    <div
+      class="buttons mt-10 flex xs:flex-col sm:flex-row md:flex-row lg:flex-row xs:gap-6 sm:gap-5 relative"
+    >
       <button
         onclick="window.location.href={demoLink}"
         class={demoLink !== null
