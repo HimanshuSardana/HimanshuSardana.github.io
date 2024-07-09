@@ -39,8 +39,7 @@ const currentPath = Astro.url.pathname;
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-          "projects"
+          class={currentPath == "/projects"
             ? "stroke-blue-500"
             : "hover:stroke-blue-500 transition"}
           stroke="currentColor"
