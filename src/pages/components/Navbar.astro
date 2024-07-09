@@ -2,11 +2,12 @@
 const currentPath = Astro.url.pathname;
 ---
 
+<!-- MOBILE NAV -->
 <div
-  class="sm:block xs:block md:block z-50 lg:hidden fixed w-full bg-zinc-700 py-5 bottom-0 mx-auto navbar flex justify-between items-center"
+  class="sm:block xs:block md:block z-50 lg:hidden fixed w-full bg-zinc-700 py-5 bottom-0 navbar flex justify-start items-start"
 >
   <ol
-    class="xs:justify-between w-full px-20 flex flex-row mx-auto justify-between gap-7"
+    class="xs:justify-between w-full px-12 flex flex-row mx-auto justify-between gap-7"
   >
     <li>
       <button onclick="window.location.href = '/' ">
