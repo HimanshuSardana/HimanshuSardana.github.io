@@ -63,8 +63,8 @@ const currentPath = Astro.url.pathname;
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
-          class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-          "blog"
+          class={currentPath == "/blog/" ||
+          currentPath.split("/")[currentPath.split("/").length - 3] == "posts"
             ? "stroke-blue-500"
             : "hover:stroke-blue-500 transition"}
           height="24"
@@ -91,8 +91,7 @@ const currentPath = Astro.url.pathname;
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-          "contact"
+          class={currentPath == "/contact/"
             ? "stroke-blue-500"
             : "hover:stroke-blue-500 transition"}
           fill="none"
