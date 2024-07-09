@@ -1,0 +1,24 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="bg-zinc-800 text-white">
+		<div class="w-1/2 mx-auto my-40">
+			<div>
+				<h1 class="text-7xl font-black align-left">Hey! 👋</h1>
+				<h1 class="text-7xl font-black">I'm <span class="bg-gradient-to-r from-pink-600 to-blue-400 inline-block text-transparent bg-clip-text">Himanshu Sardana</span></h1>
+			</div>
+			<div class="flex gap-5 mt-10">
+				<button class="px-5 py-3 font-bold text-2xl">See my work</button>
+			</div>
+		</div>
+	</body>
+</html>

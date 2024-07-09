@@ -1,0 +1,61 @@
+---
+import Navbar from "../pages/components/Navbar.astro";
+---
+
+<style is:global>
+  .post {
+    @apply leading-6;
+  }
+
+  .post > * {
+    @apply leading-9;
+  }
+  .post pre {
+    @apply leading-5 w-auto mt-3 p-3 border border-2 border-zinc-600 rounded-md;
+  }
+  .post h1 {
+    @apply text-5xl font-bold pb-7;
+  }
+  .post hr {
+    border: 1.5px solid rgba(113, 113, 122, 0.3);
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+  .post h2 {
+    @apply text-4xl font-black pb-7;
+  }
+  .post h3 {
+    @apply text-3xl font-black pb-3;
+  }
+  .post p {
+    @apply text-lg text-zinc-400 pb-7;
+  }
+  .post b {
+    @apply font-bold;
+  }
+  .post ul {
+    @apply list-disc list-inside;
+  }
+  .post i {
+    @apply italic;
+  }
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <body class="bg-zinc-800 text-white">
+      <Navbar />
+      <div
+        transition:name="page-fade"
+        class="leading-3 sm:w-2/3 lg:w-1/2 md:w-1/2 xs:w-2/3 mx-auto my-40 flex flex-col gap-3"
+      >
+        <slot style="" />
+      </div>
+    </body>
+  </body>
+</html>

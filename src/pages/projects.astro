@@ -1,0 +1,62 @@
+---
+import Navbar from "./components/Navbar.astro";
+import ProjectCard from "./components/ProjectCard.astro";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Himanshu Sardana</title>
+  </head>
+  <body class="bg-zinc-800 text-white">
+    <Navbar />
+
+    <ViewTransitions />
+    <div
+      transition:name="page-fade"
+      class="leading-3 lg:w-1/2 md:w-2/3 sm:w-2/3 xs:w-2/3 mx-auto my-40"
+    >
+      <div
+        class="flex lg:flex-row sm:flex-col sm:justify-start xs:flex-col xs:justify-start md:flex-col gap-5 lg:items-end md:items-start"
+      >
+        <span transition:name="page-fade" class="text-left text-7xl font-black"
+          >Projects</span
+        >
+        <span
+          class="text-3xl hover:text-blue-500 transition font-bold text-zinc-600"
+        >
+          (more coming soon, hopefully)
+        </span>
+      </div>
+      <div
+        class="project-cards flex lg:flex-row self-stretch justify-stretch items-stretch md:flex-col sm:flex-col xs:flex-col gap-5 mt-10"
+      >
+        <ProjectCard
+          name="Hollow Knight Trainer"
+          technologies={["Python"]}
+          demoLink={null}
+          repoLink="google.com"
+          description="Master Hollow Knight with our trainer! Gain invincibility, unlimited coins, and more. Enhance your gameplay and conquer challenges effortlessly!"
+        />
+
+        <ProjectCard
+          name="TypistPVP"
+          technologies={[
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Golang",
+            "ReactJS",
+            "WebSockets",
+          ]}
+          description="Race against friends in our thrilling typing app! Challenge your speed, improve your skills, and see who reigns supreme as the ultimate typing champion!"
+          demoLink={"x.com"}
+          repoLink="google.com"
+        />
+      </div>
+    </div>
+  </body>
+</html>
