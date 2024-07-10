@@ -50,12 +50,14 @@ import Navbar from "../pages/components/Navbar.astro";
   <body>
     <body class="bg-zinc-800 text-white">
       <Navbar />
-      <div
-        transition:name="page-fade"
-        class="leading-3 sm:w-2/3 lg:w-1/2 md:w-1/2 xs:w-full xs:px-10 mx-auto my-40 xs:my-10 flex flex-col gap-3"
-      >
-        <slot style="" />
-      </div>
+      {
+        (
+          // TODO: Add bottom padding to bottom of post, not visible on mobile }
+          <div transition:name="page-fade" class="mx-auto w-1/2 my-20">
+            <slot style="" />
+          </div>
+        )
+      }
     </body>
   </body>
 </html>
