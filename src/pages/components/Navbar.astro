@@ -209,7 +209,7 @@ const currentPath = Astro.url.pathname;
         >
       </li>
       <li>
-        <button onclick="window.location.href = '/projects' ">
+        <button onclick="window.location.href = '/projects/' ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -217,7 +217,7 @@ const currentPath = Astro.url.pathname;
             viewBox="0 0 24 24"
             fill="none"
             class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-            "projects"
+            "/projects/"
               ? "stroke-blue-500"
               : "hover:stroke-blue-500 transition"}
             stroke="currentColor"
@@ -242,8 +242,8 @@ const currentPath = Astro.url.pathname;
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-              "blog" ||
-            currentPath.split("/")[currentPath.split("/").length - 1] == "posts"
+              "/blog/" ||
+            currentPath.split("/")[currentPath.split("/").length - 3] == "posts"
               ? "stroke-blue-500"
               : "hover:stroke-blue-500 transition"}
             height="24"
@@ -271,7 +271,7 @@ const currentPath = Astro.url.pathname;
             height="24"
             viewBox="0 0 24 24"
             class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-            "contact"
+            "contact/"
               ? "stroke-blue-500"
               : "hover:stroke-blue-500 transition"}
             fill="none"
