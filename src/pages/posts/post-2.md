@@ -5,6 +5,14 @@ pubDate: 2024-07-21
 ---
 
 ### heading 1
+`hello`
+
+```bash
+ls
+alias cd = cd **
+```
+---
+
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum dolor sit. At quis risus sed vulputate odio. Platea dictumst vestibulum rhoncus est. Praesent tristique magna sit amet purus. Ac turpis egestas maecenas pharetra. Etiam sit amet nisl purus in mollis nunc sed. Porta non pulvinar neque laoreet suspendisse interdum. Suspendisse potenti nullam ac tortor vitae purus. A arcu cursus vitae congue. Dui vivamus arcu felis bibendum ut tristique. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Nisl rhoncus mattis rhoncus urna. Lorem dolor sed viverra ipsum nunc aliquet. Malesuada bibendum arcu vitae elementum curabitur. Mus mauris vitae ultricies leo. Consequat id porta nibh venenatis cras sed felis.
 

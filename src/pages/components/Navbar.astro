@@ -63,7 +63,7 @@ const currentPath = Astro.url.pathname;
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
-          class={currentPath == "/blog/" ||
+	  class={currentPath.includes("blog") ||
           currentPath.split("/")[currentPath.split("/").length - 3] == "posts"
             ? "stroke-blue-500"
             : "hover:stroke-blue-500 transition"}
@@ -216,8 +216,8 @@ const currentPath = Astro.url.pathname;
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-            "/projects/"
+            class={currentPath.split("/")[currentPath.split("/").length - 2] ==
+            "projects"
               ? "stroke-blue-500"
               : "hover:stroke-blue-500 transition"}
             stroke="currentColor"
@@ -241,8 +241,8 @@ const currentPath = Astro.url.pathname;
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
-            class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-              "/blog/" ||
+            class={currentPath.split("/")[currentPath.split("/").length - 2] ==
+              "blog" ||
             currentPath.split("/")[currentPath.split("/").length - 3] == "posts"
               ? "stroke-blue-500"
               : "hover:stroke-blue-500 transition"}
@@ -270,8 +270,8 @@ const currentPath = Astro.url.pathname;
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            class={currentPath.split("/")[currentPath.split("/").length - 1] ==
-            "contact/"
+            class={currentPath.split("/")[currentPath.split("/").length - 2] ==
+            "contact"
               ? "stroke-blue-500"
               : "hover:stroke-blue-500 transition"}
             fill="none"

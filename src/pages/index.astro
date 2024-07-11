@@ -13,123 +13,125 @@ import { ViewTransitions } from "astro:transitions";
     <title>Home | Himanshu Sardana</title>
   </head>
   <body class="bg-zinc-800 text-white">
-    <Navbar />
-    <div
-      transition:name="page-fade"
-      class="leading-3 lg:w-1/2 md:w-2/3 sm:w-2/3 xs:w-full xs:px-10 mx-auto xs:my-20 md:my-40 flex flex-col gap-3"
-    >
-      <div>
-        <h1
-          class="md:text-7xl lg:text-7xl sm:text-7xl xs:text-5xl font-black align-left"
-        >
-          Hey! 👋
-        </h1>
-        <h1
-          class="leading-9 mt-3 md:text-7xl sm:text-7xl xs:text-5xl lg:text-7xl font-black"
-        >
-          I'm <span class="text-blue-500">Himanshu Sardana</span>
-        </h1>
-      </div>
+    <div class="body opacity-1 transition duration-300">
+      <Navbar />
       <div
-        class="flex lg:flex-row xs:flex-col md:flex-row sm:flex-col gap-5 mt-10"
+        transition:name="page-fade"
+        class="leading-3 lg:w-1/2 md:w-2/3 sm:w-2/3 xs:w-full xs:px-10 mx-auto xs:my-20 md:my-40 flex flex-col gap-3"
       >
-        <a
-          href="/projects"
-          class="px-5 py-3 md:hover:translate-y-[-5px] lg:hover:translate-y-[-5px] transition font-bold text-md bg-blue-500 w-auto text-center flex justify-center /2 text-white rounded-full flex items-center gap-3"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            class="stroke-white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-briefcase-business"
-            ><path d="M12 12h.01"></path><path
-              d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path
-              d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect
-              width="20"
-              height="14"
-              x="2"
-              y="6"
-              rx="2"></rect></svg
+        <div>
+          <h1
+            class="md:text-7xl lg:text-7xl sm:text-7xl xs:text-5xl font-black align-left"
           >
-          See My Work</a
-        >
-        <button
-          class="px-5 hover:translate-y-[-5px] md:hovertranslate-y-[-5px] sm:hover:translate-y-0 flex justify-center transition py-3 font-bold text-md border border-white border-2 bg-transparent text-white rounded-full flex items-center gap-3"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-github"
-            ><path
-              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-            ></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+            Hey! 👋
+          </h1>
+          <h1
+            class="leading-9 mt-3 md:text-7xl sm:text-7xl xs:text-5xl lg:text-7xl font-black"
           >
-          GitHub</button
-        >
-      </div>
-      <div
-        class="md:w-2/3 lg:w-2/3 mt-5 sm:w-full mt-15 text-zinc-500 font-bold leading-7 text-lg"
-      >
-        <p>
-          19 y/o from India&nbsp; 🇮🇳&nbsp; studying <span
-            class="hover:underline transititon text-blue-400"
-            >Computer Science</span
-          >. Huge computer nerd. <span
-            class="hover:underline transititon text-blue-400"
-          >
-            Linux enthusiast</span
-          >
-          (I use arch btw). Occasionally dabble in hardware and <span
-            class="hover:underline transititon text-blue-400"
-            >embedded systems.</span
-          > Did I mention I use arch?
-        </p>
-      </div>
-      <hr
-        class="mt-5 border border-1 border-zinc-700 border-text-zinc-500 bg-zinc-500"
-      />
-      <div class="about">
-        <div
-          class="text flex mt-5 sm:flex-col xs:flex-col md:flex-col lg:flex-row gap-3 sm:items-start sm:gap-3 md:items-start lg:items-end"
-        >
-          <h3
-            class="font-black lg:text-5xl md:text-5xl sm:text-4xl xs:text-5xl"
-          >
-            Stuff I Know
-          </h3>
-          <h3 class="font-bold text-zinc-500 text-2xl">
-            (or pretend to know :p)
-          </h3>
+            I'm <span class="text-blue-500">Himanshu Sardana</span>
+          </h1>
         </div>
         <div
-          class="flex flex-wrap flex-row mt-10 xs:gap-2 gap-5 sm:w-3/4 md:w-2/3 xs:w-full mr-10"
+          class="flex lg:flex-row xs:flex-col md:flex-row sm:flex-col gap-5 mt-10"
         >
-          <Tag text="HTML" />
-          <Tag text="CSS" />
-          <Tag text="JavaScript" />
-          <Tag text="NodeJS" />
-          <Tag text="Python" />
-          <Tag text="Golang" />
-          <Tag text="Linux" />
-          <Tag text="C++" />
-          <Tag text="C" />
-          <Tag text="ReactJS" />
-          <Tag text="Astro.js" />
-          <Tag text="UI/UX Design" />
+          <a
+            href="/projects"
+            class="px-5 py-3 md:hover:translate-y-[-5px] lg:hover:translate-y-[-5px] transition font-bold text-md bg-blue-500 w-auto text-center flex justify-center /2 text-white rounded-full flex items-center gap-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              class="stroke-white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-briefcase-business"
+              ><path d="M12 12h.01"></path><path
+                d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><path
+                d="M22 13a18.15 18.15 0 0 1-20 0"></path><rect
+                width="20"
+                height="14"
+                x="2"
+                y="6"
+                rx="2"></rect></svg
+            >
+            See My Work</a
+          >
+          <button
+            class="px-5 hover:translate-y-[-5px] md:hovertranslate-y-[-5px] sm:hover:translate-y-0 flex justify-center transition py-3 font-bold text-md border border-white border-2 bg-transparent text-white rounded-full flex items-center gap-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-github"
+              ><path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+              ></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+            >
+            GitHub</button
+          >
+        </div>
+        <div
+          class="md:w-2/3 lg:w-2/3 mt-5 sm:w-full mt-15 text-zinc-500 font-bold leading-7 text-lg"
+        >
+          <p>
+            19 y/o from India&nbsp; 🇮🇳&nbsp; studying <span
+              class="hover:underline transititon text-blue-400"
+              >Computer Science</span
+            >. Huge computer nerd. <span
+              class="hover:underline transititon text-blue-400"
+            >
+              Linux enthusiast</span
+            >
+            (I use arch btw). Occasionally dabble in hardware and <span
+              class="hover:underline transititon text-blue-400"
+              >embedded systems.</span
+            > Did I mention I use arch?
+          </p>
+        </div>
+        <hr
+          class="mt-5 border border-1 border-zinc-700 border-text-zinc-500 bg-zinc-500"
+        />
+        <div class="about">
+          <div
+            class="text flex mt-5 sm:flex-col xs:flex-col md:flex-col lg:flex-row gap-3 sm:items-start sm:gap-3 md:items-start lg:items-end"
+          >
+            <h3
+              class="font-black lg:text-5xl md:text-5xl sm:text-4xl xs:text-5xl"
+            >
+              Stuff I Know
+            </h3>
+            <h3 class="font-bold text-zinc-500 text-2xl">
+              (or pretend to know :p)
+            </h3>
+          </div>
+          <div
+            class="flex flex-wrap flex-row mt-10 xs:gap-2 gap-5 sm:w-3/4 md:w-2/3 xs:w-full mr-10"
+          >
+            <Tag text="HTML" />
+            <Tag text="CSS" />
+            <Tag text="JavaScript" />
+            <Tag text="NodeJS" />
+            <Tag text="Python" />
+            <Tag text="Golang" />
+            <Tag text="Linux" />
+            <Tag text="C++" />
+            <Tag text="C" />
+            <Tag text="ReactJS" />
+            <Tag text="Astro.js" />
+            <Tag text="UI/UX Design" />
+          </div>
         </div>
       </div>
     </div>
